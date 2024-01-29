@@ -14,7 +14,7 @@ function MiNavbar() {
       <Container fluid>
       <div>
         <LinkContainer to="/directo">
-          <img src="../file/img/profile.png" alt=" Logo" className="logo"/>
+          <img src="/profile.png" alt="Logo" className="logo" height={'50px'}/>
         </LinkContainer>
       </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -57,7 +57,7 @@ function MiNavbar() {
             </LinkContainer>
 
             <LinkContainer to="/perfil">
-              <Nav.Link className="p-2"><img src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-Clipart.png" alt="" height={'50px'}/></Nav.Link>
+              <Nav.Link className="p-2"><img src="/profile.png" alt="" height={'50px'}/></Nav.Link>
             </LinkContainer>
 
       </Container>
