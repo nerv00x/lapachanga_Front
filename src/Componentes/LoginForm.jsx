@@ -1,11 +1,22 @@
 // LoginForm.js
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import RegisterModal from "./registerModal";
+import { useState } from "react";
+
 
 const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Lógica de inicio de sesión
+  };
+
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
+  const handleOpenRegisterModal = () => {
+    setShowRegisterModal(true);
+  };
+  const handleCloseRegisterModal = () => {
+    setShowRegisterModal(false);
   };
 
   return (
@@ -23,6 +34,19 @@ const LoginForm = () => {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+
+      <Button
+        variant="success"
+        className="ms-2"
+        onClick={handleOpenRegisterModal}
+      >
+        Register
+      </Button>
+
+      <RegisterModal
+        showModal={showRegisterModal}
+        handleClose={handleCloseRegisterModal}
+      />
     </Form>
   );
 };

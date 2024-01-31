@@ -1,7 +1,7 @@
 // LoginModal.js
 import React from 'react';
 import { Modal } from 'react-bootstrap';
-import LoginForm from './LoginForm';
+import LoginForm from './loginForm';
 
 const LoginModal = ({ showModal, handleClose }) => {
   return (

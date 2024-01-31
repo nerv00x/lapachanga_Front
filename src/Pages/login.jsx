@@ -1,6 +1,6 @@
 // LoginPage.js
 import React, { useState } from 'react';
-import LoginModal from '../Componentes/LoginModal';
+import LoginModal from '../Componentes/loginModal';
 
 const LoginPage = () => {
   const [showModal, setShowModal] = useState(true);
