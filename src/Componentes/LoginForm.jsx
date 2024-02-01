@@ -4,7 +4,7 @@ import { Form, Button, Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import RegisterModal from "./registerModal";
-import LoginModal from "./loginModal"; 
+import LoginModal from "./LoginModal"; 
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -105,7 +105,7 @@ const LoginForm = () => {
         <Button
           variant="success"
           className="ms-2"
-          onClick={() => setShowLoginModal(true)} // Abre el modal de inicio de sesión
+          onClick={() => setShowRegisterModal(true)} // Abre el modal de inicio de sesión
         >
           Register
         </Button>

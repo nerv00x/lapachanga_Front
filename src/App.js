@@ -7,20 +7,29 @@ import ApuestasPage from './Pages/apuestas';
 import DirectoPage from './Pages/directo';
 import SalasPage from './Pages/salas';
 import LoginPage from './Pages/login';
+import Sidebar from './Componentes/siderbar'; 
 
-
-  const App = () => {
-
+const App = () => {
   return (
     <Router>
       <div>
         <MiNavbar />
-        <Routes>
-          <Route path="/directo" element={<DirectoPage />} />
-          <Route path="/salas" element={<SalasPage />} />
-          <Route path="/apuestas" element={<ApuestasPage />} />
-          <Route path="/login" element={<LoginPage />} />
-        </Routes>
+
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-3">
+              <Sidebar />
+            </div>
+            <div className="col-md-9">
+              <Routes>
+                <Route path="/directo" element={<DirectoPage />} />
+                <Route path="/salas" element={<SalasPage />} />
+                <Route path="/apuestas" element={<ApuestasPage />} />
+                <Route path="/login" element={<LoginPage />} />
+              </Routes>
+            </div>
+          </div>
+        </div>
       </div>
     </Router>
   );

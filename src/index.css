@@ -18,6 +18,12 @@ code {
   color: white;
 }
 
+#sidebar{
+
+  background-color: #329F5B;
+  color: white;
+}
+
 .navbar-brand,
 .nav-link {
   color:white!important;
@@ -35,3 +41,16 @@ code {
   width: 300px; /* Adjust the width of your logo image */
   height: 80px;
 }
+
+
+/* StackedExample.css */
+/* StackedExample.css */
+.reduced-height {
+  height: calc(100vh - 80px); /* Ajusta la altura según sea necesario (80px es un ejemplo) */
+  margin-top: 80px; /* Ajusta el margen superior según sea necesario */
+  position: fixed; /* Fija el Navbar en la posición */
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; /* Añade desplazamiento vertical si es necesario */
+}
+
