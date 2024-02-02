@@ -1,5 +1,6 @@
 // LoginPage.js
 import React, { useState } from 'react';
+import '../index.css';
 import LoginModal from '../Componentes/LoginModal';
 
 const LoginPage = () => {

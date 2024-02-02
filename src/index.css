@@ -1,5 +1,4 @@
-body {
-  margin: 0;
+body { /* Corregido: background-color en lugar de background */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,30 +6,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 /* Estilos para el Navbar */
-.navbar {
-  background-color: #329F5B;
+.navbar-top {
+  background-color: #A18276;
   color: white;
+  border-bottom: black 0.5px solid;
 }
 
-#sidebar{
-
-  background-color: #329F5B;
-  color: white;
-}
 
 .navbar-brand,
 .nav-link {
-  color:white!important;
+  color:rgb(0, 0, 0)!important;
 }
 
 .nav-link:hover {
-  color: yellow !important;
+  color: rgb(158, 158, 55) !important;
 }
 
 .search{
@@ -43,14 +39,46 @@ code {
 }
 
 
-/* StackedExample.css */
-/* StackedExample.css */
+/* Sider */
+
 .reduced-height {
   height: calc(100vh - 80px); /* Ajusta la altura según sea necesario (80px es un ejemplo) */
-  margin-top: 80px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 107px; /* Ajusta el margen superior según sea necesario */
   position: fixed; /* Fija el Navbar en la posición */
   top: 0;
   bottom: 0;
   overflow-y: auto; /* Añade desplazamiento vertical si es necesario */
 }
+#sidebar{
+  border-bottom: black 0.5px solid;
+  border-left: black 0.5px solid;
+  border-right: black 0.5px solid;
+}
 
+.fixed-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+.reduced-height {
+  max-height: 80vh; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Añade desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+  height: 90px;
+  width: 100%;
+}
+
+.lec-logo{
+  height: 90px;
+  width: 80%;
+}

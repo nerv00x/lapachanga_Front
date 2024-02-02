@@ -17,37 +17,25 @@ function MiNavbar() {
   const handleCloseLoginModal = () => {
     setShowLoginModal(false);
   };
-
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg navbar-top">
       <Container fluid>
         <div>
           <LinkContainer to="/directo">
-            <img
-              src="/profile.png"
-              alt="Logo"
-              className="logo"
-              height={"50px"}
-            />
+            <img src="/logo.png" alt="Logo" className="logo" />
           </LinkContainer>
         </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Navbar
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
+          <Navbar className="me-auto my-2 my-lg-0" navbarScroll>
             <LinkContainer to="/directo">
-              <Nav.Link className="p-2">Directo</Nav.Link>
+              <Nav.Link className="px-5">Directo</Nav.Link>
             </LinkContainer>
-
             <LinkContainer to="/salas">
-              <Nav.Link className="p-2">Salas</Nav.Link>
+              <Nav.Link className="px-5">Salas</Nav.Link>
             </LinkContainer>
-
             <LinkContainer to="/apuestas">
-              <Nav.Link className="p-2">Apuestas</Nav.Link>
+              <Nav.Link className="px-5">Apuestas</Nav.Link>
             </LinkContainer>
           </Navbar>
 
